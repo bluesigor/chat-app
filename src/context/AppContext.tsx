@@ -16,11 +16,7 @@ export const AppContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [messages, setMessages] = useState<App.Message[]>([
-    { id: 1, text: "Hi there!", sender: "bot" },
-    { id: 2, text: "Hello!", sender: "user" },
-    { id: 3, text: "How can I assist you today?", sender: "bot" },
-  ]);
+  const [messages, setMessages] = useState<App.Message[]>([]);
 
   const contextValue = {
     messages,

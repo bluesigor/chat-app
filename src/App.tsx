@@ -1,9 +1,10 @@
 import { Box } from "@mui/material";
 
-import "./App.css";
 import MessageList from "./components/MessageList";
-import TextInput from "./components/TextInput";
+import MessageContainer from "./components/MessageContainer";
+
 import { AppContextProvider } from "./context/AppContext";
+import "./App.css";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       }}>
       <AppContextProvider>
         <MessageList />
-        <TextInput />
+        <MessageContainer />
       </AppContextProvider>
     </Box>
   );
